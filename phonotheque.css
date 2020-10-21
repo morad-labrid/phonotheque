@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica;
+    color: #FFFFFF;
+    letter-spacing: 3.34px;
+    font-weight: lighter;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 250px;
+    background: #091425;
+    box-shadow: 11px 0 33px -17px #000000;
+}
+
+.logo {
+    margin-top: 50px;
+    width: 150px;
+}
+
+.logo:hover {
+    animation: shtar 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shtar {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+a img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: rgba(158, 190, 249, 0.20);
+    border-radius: 65px;
+    color: #FFFFFF;
+    letter-spacing: 2.19px;
+    width: 200px;
+    height: 35px;
+    padding-left: 20px;
+    margin-bottom: 80px;
+}
+
+input::placeholder {
+    color: #bfbebe;
+    font-size: 11px;
+}
+
+.logo-page {
+    opacity: 25%;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+main {
+    color: black;
+    width: 100%;
+    max-height: 92vh;
+    background: linear-gradient(92deg, #09121F 0%, #1E3039 65%);
+}
+
+.page1-s {
+    margin-top: 3%;
+    width: 95%;
+}
+
+.div-liste-menu-s {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.img1-s {
+    background-image: url("images/Classique/Anna-Netrebko.jpg");
+    height: 15vh;
+    width: 15vh;
+    background-position: top;
+    background-size: cover;
+    border-radius: 40px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.img1-s:hover {
+    transform: scale(1.2) translate(5vh);
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.img2-s {
+    background-image: url("images/Rap/mac-tyer.jpg");
+    height: 15vh;
+    width: 15vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.img2-s:hover {
+    transform: scale(1.2) translate(5vh);
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.img3-s {
+    background-image: url("images/Classique/Alexandre-Kantorow.jpg");
+    height: 15vh;
+    width: 15vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.img3-s:hover {
+    transform: scale(1.2) translate(5vh);
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.img4-s {
+    background-image: url("images/Rap/jul.jpg");
+    height: 15vh;
+    width: 15vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.img4-s:hover {
+    transform: scale(1.2) translate(5vh);
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.img5-s {
+    background-image: url("images/Rap/maes.jpg");
+    height: 15vh;
+    width: 15vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.img5-s:hover {
+    /* transform: scale(1.2); */
+    transform: scale(1.2) translate(5vh);
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+i {
+    font-size: 10vh;
+    color: white;
+    transition: 0.6s;
+    cursor: pointer;
+    transform: translateY(2vh);
+}
+
+i:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.page-s {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bloc1-s {
+    width: 300px;
+    height: 350px;
+    background: rgba(216, 216, 216, 0.12);
+    border-radius: 69px 0 69px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.artiste-musique-s {
+    background: url("images/Rap/maes.jpg");
+    height: 15vh;
+    width: 15vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+
+figure {
+    transform: translateX(-5vh);
+}
+
+.audio-s {
+    width: 35vh;
+}
+
+figcaption {
+    color: gray;
+}
+
+.page2-s {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bloc2-titre-s {
+    color: white;
+}
+
+.scroll-up {
+    height: 50vh;
+    width: 100vh;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+.scroll-up pre {
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: left;
+    /* Starting position */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-up 15s linear infinite;
+    -webkit-animation: scroll-up 15s linear infinite;
+    animation: scroll-up 15s linear infinite;
+}
+
+
+/* Move it (define the animation) */
+
+@-moz-keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(100%);
+    }
+    100% {
+        -moz-transform: translateY(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-up {
+    0% {
+        -webkit-transform: translateY(100%);
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(100%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(100%);
+        /* Browser bug fix */
+        transform: translateY(100%);
+    }
+    100% {
+        -moz-transform: translateY(-100%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(-100%);
+        /* Browser bug fix */
+        transform: translateY(-100%);
+    }
+}
+
+
+/* Partie Morad */
+
+.main-classic-m {
+    background-image: linear-gradient(180deg, #5C2F0D 0%, #C55909 100%);
+    color: white;
+}
+
+.main-rap-m {
+    place-items: center;
+    color: white;
+    height: 92vh;
+    width: 100%;
+    background-image: linear-gradient(11deg, #2385CC 0%, #2E2A4F 100%);
+}
+
+.titre-classic-m {
+    height: 100px;
+    background-image: linear-gradient(180deg, #09121f99 0%, #1e303999 100%);
+    box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.50);
+    font-size: 35px;
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 50px;
+}
+
+.titre-rap-m {
+    height: 100px;
+    background-image: linear-gradient(180deg, #122540 0%, #223d4a 100%);
+    box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.257);
+    font-size: 35px;
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 50px;
+}
+
+.div-artistes-m {
+    width: 300px;
+    height: 350px;
+    background: rgba(216, 216, 216, 0.12);
+    border-radius: 69px 0 69px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.div-artistes-m div {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    background-color: #0000002e;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.div-artistes-m div:hover {
+    padding: 0 64px;
+}
+
+.div-artistes-m div:hover img {
+    transform: rotate(360deg);
+    transition: 0.7s;
+}
+
+.div-artistes-m div:hover p {
+    display: none;
+}
+
+.div-artistes-m img {
+    width: 55px;
+    margin-right: 20px;
+}
+
+.div-album-m {
+    background: rgba(216, 216, 216, 0.12);
+    border-radius: 28px 28px 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px 0;
+}
+
+.div-album-m img {
+    width: 50px;
+}
+
+.titre-album-m {
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.titre-album-m img {
+    margin: 5px 10px;
+}
+
+.all-element-m {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-top: 10%; */
+}
+
+.playiste-m {
+    opacity: 0.85;
+    display: flex;
+    transition: 0.5s;
+}
+
+.playiste-m:hover {
+    opacity: 1;
+}
+
+.playiste-m img {
+    width: 150px;
+    border-radius: 0 0 0 28px;
+}
+
+.audio-m {
+    width: 150px;
+    height: 145px;
+    background-color: white;
+    border-radius: 0 0 28px 0;
+    color: #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+audio {
+    width: 140px;
+    outline: none;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: white;
+    color: #000;
+}
+
+footer {
+    /* margin-top: 85px; */
+    height: 60px;
+    background-color: #09121F;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 0 40px; */
+    font-size: 10px;
+    color: #D8D8D8;
+    font-weight: lighter;
+}
+
+footer div a {
+    margin-right: 20px;
+}
+
+footer div a i {
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+footer div a i:hover {
+    transform: rotate(60deg);
+}
